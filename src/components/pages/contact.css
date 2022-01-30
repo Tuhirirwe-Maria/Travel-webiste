@@ -1,0 +1,19 @@
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ContactImage{
+    width: 35rem;
+    /* border: 2px red solid; */
+
+}
+.contact_heading{
+text-align: center;
+padding: 1rem 0;
+}
+.img-travel{
+    width: 100%;
+    object-fit: cover;
+}

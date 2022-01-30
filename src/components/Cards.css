@@ -1,0 +1,146 @@
+.cards {
+    padding: 4rem 1rem;
+    background: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .cards__container {
+    /* flex-flow: column; */
+    max-width: 1120px;
+    /* width: 90%; */
+    margin: 0 auto;
+  }
+  
+  .cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .cards__items {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .cards__item {
+    display: flex;
+    flex: 2;
+    margin: 0 .7rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  
+  .cards__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .cards__item__pic-wrap {
+    /* background-image: url("https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989142/img-9_bqnh9o.jpg"); */
+    position: relative;
+    width: 100%;
+    background-size: 360px 250px;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  .cards__item__text{
+    padding: .6rem;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+  }
+  
+  
+  #img-9{
+    background-image: url("https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989142/img-9_bqnh9o.jpg");
+ 
+    transition: all 0.2s linear;
+  }
+#img-2{
+    background-image: url("https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989293/img-2_ckbmq3.jpg");
+
+    transition: all 0.2s linear;
+  }
+  #img-3{
+    background-image: url("https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989235/img-3_xidog6.jpg");
+
+    transition: all 0.2s linear;
+  }
+  #img-4{
+    background-image: url("https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989289/img-4_zobmp9.jpg");
+
+    transition: all 0.2s linear;
+  }
+  #img-8{
+    background-image: url("https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989132/img-8_u2hgkd.jpg");
+
+    transition: all 0.2s linear;
+  }
+  .cards__item__pic-wrap:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .cards__item__text {
+    color: #252e48;
+  }
+  .img:hover{
+    /* -ms-transform: scale(1.5); IE 9 */
+    /* -webkit-transform: scale(1.5); Safari 3-8 */
+    /* transform: scale(1.5);  */
+  }
+
+  /* tablets */
+  /* @media only screen and (width: 768px) {
+    .img-3{
+      background-size: 520px 350px;
+    }
+    .img-4{
+      background-size: 520px 350px;
+    }
+    .img-8{
+      background-size: 520px 350px;
+    }
+  }  */
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* @media only screen and (min-width: 992px) {
+   
+    .img-3{
+      background-size: 312px 240px;
+    }
+    .img-4{
+      background-size: 312px 240px;
+    }
+    .img-8{
+      background-size: 312px 240px;
+    }
+  }  */

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .home {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center; 
+    font-size: 3rem;
+  }
+  
+
+  .services-1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  .products {
+    background-image: url('https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989205/img-1_cr5fpr.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .sign-up {
+    background-image: url('https://res.cloudinary.com/awesomeone-maria/image/upload/v1629989132/img-8_u2hgkd.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
